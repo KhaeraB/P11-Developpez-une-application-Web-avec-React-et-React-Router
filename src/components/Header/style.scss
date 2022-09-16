@@ -7,35 +7,38 @@ header
     {
         padding: 5% 5% 0 5% !important;
     }
-}
-.logo
-{
-    height: 68px;
-
-    @media (max-width: 768px)
-    {
-        height: 47px;
+    .align-text{
+        text-align: left;
     }
-}
-.nav-link
-{
-    padding-left: 5%;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 34px;
-    letter-spacing: 0em;
-    text-align: center;
-
-    &:hover
+    .logo
     {
-        text-decoration: underline;
-        text-underline-offset: 1rem;
+        height: 68px;
+    
+        @media (max-width: 768px)
+        {
+            height: 47px;
+        }
     }
-
-    @media (max-width: 768px)
+    .nav-link
     {
-        font-size: 12px;
-        padding: 0 10px;
+        padding-left: 5%;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: center;
+    
+        &:hover
+        {
+            text-decoration: underline;
+            text-underline-offset: 1rem;
+        }
+    
+        @media (max-width: 768px)
+        {
+            font-size: 24px;
+            padding: 0px 8px;
+        }
     }
 }

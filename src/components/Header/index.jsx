@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className="container">
       <nav className="row justify-content-between align-items-center">
-        <div className="col col-md-6">
+        <div className="col col-md-6 align-text">
           <Link to="/">
             <img className="logo" src={Logo} alt="Logo Kasa" />
           </Link>
@@ -17,7 +17,7 @@ function Header() {
             Accueil
           </Link>
 
-          <Link className="nav-link" to="/A_propos">
+          <Link className="nav-link" to="/a-propos">
             À Propos
           </Link>
         </div>

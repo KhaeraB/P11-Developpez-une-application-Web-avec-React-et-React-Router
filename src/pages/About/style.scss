@@ -1,0 +1,51 @@
+.main-hero-about{
+    height: 223px;
+    background: rgba(0, 0, 0, 0.3) url('../../assets/about_main_hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    border-radius: 25px;
+    margin-bottom: 3%;
+    @media (max-width: 768px)
+    {
+        height: 180px;
+        margin-top: 12%;
+    }
+}
+
+.about-item{
+    width: 80%;
+    margin: 0 auto;
+    .accordion{
+        --bs-accordion-border-color: none;
+    }
+    .accordion-item .accordion-button {
+        background-color: #ff6060;
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 34px;
+        border-radius: 5px;
+      }
+      .accordion-item {
+        margin-bottom: 2%;
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+          }
+          .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+          }
+
+          .accordion-body{
+            color:#ff6060;
+            background-color: #F6F6F6;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 34px;
+            border-radius: 5px;
+            margin-top: -4px;
+          }
+      }
+     
+      
+}

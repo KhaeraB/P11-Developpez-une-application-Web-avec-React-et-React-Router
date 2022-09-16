@@ -5,7 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.scss";
 
 import Home from "./pages/Home";
-
+import Error from "./pages/Error"; 
+import About from "./pages/About"
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -17,6 +18,8 @@ root.render(
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/a-propos" element={<About />} />
+        <Route path="/*" element={<Error />} />
       </Routes>
       <Footer />
     </Router>

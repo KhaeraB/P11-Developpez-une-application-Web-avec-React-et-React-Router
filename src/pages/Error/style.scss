@@ -1,0 +1,59 @@
+.page-not-found{
+    text-align: center;
+    color: #FF6060;
+    margin-bottom: 3%;
+    flex-direction: column;
+    @media (max-width: 768px)
+    {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        margin-bottom: 28%;
+    }    
+    .error-page{
+        margin-bottom: 12%;
+        .title-error{
+            font-size: 288px;
+            font-weight: 700;
+            line-height: 301px;
+            @media (max-width: 768px)
+            {
+                font-size: 96px;
+                font-weight: 700;
+                line-height: 137px;
+
+            }
+        }
+        .error-path{
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 120px;
+
+             @media (max-width: 768px)
+            {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+
+            }
+        }
+        @media (max-width: 768px)
+        {
+            margin-bottom: 20%;
+            margin-top: 3%;
+        } 
+    }
+    .back-home{
+        color: #FF6060;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        @media (max-width: 768px)
+            {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+
+            }
+        }
+    }
