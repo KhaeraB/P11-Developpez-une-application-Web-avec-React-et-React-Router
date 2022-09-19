@@ -1,0 +1,58 @@
+.details{
+    margin: 3% 0;
+
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    color: #FF6060;
+    .host{
+        align-items: center;
+        padding: 0;
+        .hostName{
+            line-height: 20px;
+            p{
+                margin: 0;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: right;
+            }
+        }
+        .image{
+            text-align: right;
+            .hostThumbnail{
+                width: 64px;
+                height: 64px;  
+                border-radius: 50%; 
+                text-align: right;
+            }
+        }
+       
+    }
+   
+}
+
+.accordeon-ad{
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    .accordion{
+        width: 582px;
+        padding: 0;
+        .accordion-item {
+            margin-bottom: 4%;
+            .accordion-body{
+                height: 100%;
+                font-size: 18px;
+            }
+        }
+        ul{
+            padding: 0;
+            .item{
+                list-style-type: none;
+            }
+        }
+        
+    }
+}

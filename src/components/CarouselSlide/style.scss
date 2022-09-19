@@ -1,0 +1,38 @@
+.carousel{
+    .carousel-indicators {
+        display: none!important;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        height: 100px;
+        width: 100px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        width: 10%!important;
+        opacity: 1;
+    }
+    .carousel-inner{
+        border-radius: 25px;
+        .carousel-indicators{
+            display: none!important;
+        }
+        .carousel-caption{
+            p{
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+                letter-spacing: 0em;
+                text-align: center;
+                margin: 0;
+            }
+        }
+        
+        .carousel-item{
+            border-radius: 5px;
+            img{
+                width: 100%;
+                height: 415px;
+                object-fit: cover;
+            }
+        }
+    }   
+}

@@ -1,0 +1,22 @@
+.stars
+{
+    font-size: 30px;
+    margin-top: 8%;
+
+    @media only screen and (max-width: 768px)
+    {
+        font-size: 15px;
+    }
+}
+.star-red
+{
+    background-image: url("../../assets/stars-red.svg");
+    height: 36px;
+    width: 36px;
+}
+.star-grey
+{
+    background-image: url("../../assets/stars-grey.svg");
+    height: 36px;
+    width: 36px;
+}
