@@ -11,6 +11,18 @@
         align-items: flex-start;
         display: block;
     }
+    h1{
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    h3{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+    }
     @media (max-width: 768px){
         h1{
             font-size: 18px;
