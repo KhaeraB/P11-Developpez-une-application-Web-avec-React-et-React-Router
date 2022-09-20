@@ -1,14 +1,16 @@
 .accordion {
   --bs-accordion-border-color: none;
+  .accordion-item .accordion-button {
+    background-color: #ff6060;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    border-radius: 5px;
+  }
+  
 }
-.accordion-item .accordion-button {
-  background-color: #ff6060;
-  color: white;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 34px;
-  border-radius: 5px;
-}
+
 .accordion-item {
   margin-bottom: 2%;
   .accordion-button::after {
@@ -27,4 +29,5 @@
     border-radius: 5px;
     margin-top: -4px;
   }
+
 }

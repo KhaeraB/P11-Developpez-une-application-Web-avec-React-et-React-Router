@@ -13,7 +13,7 @@ function CarouselSlide({images}) {
               images.map((image, index) => {
                 
                   return(
-                    <Carousel.Item>
+                    <Carousel.Item key={image}>
                       <img src={image} alt="Logement"/>
                       <Carousel.Caption>
                         <p>{index+1} / {allImages}</p>
