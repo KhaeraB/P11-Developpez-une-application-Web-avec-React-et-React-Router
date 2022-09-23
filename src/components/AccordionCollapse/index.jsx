@@ -6,15 +6,15 @@ import "./style.scss";
 function AccordionCollapse({ title, textArray }) {
   return (
    
-      <div class="accordions accordion-about mb-4">
-        <div class="accordion">
+      <div className="accordions accordion-about mb-4">
+        <div className="accordion">
           <input type="checkbox" id={`service-${title}`}/>
 
-          <label class="accordion-header" for={`service-${title}`}>
+          <label className="accordion-header" htmlFor={`service-${title}`}>
             {title}
           </label>
 
-          <div class="accodion-body"> <ul>{textArray.map((item, index) => (
+          <div className="accodion-body"> <ul>{textArray.map((item, index) => (
           <li key={`item-${index}`}>{item}</li>
         ))}</ul></div>
         </div>

@@ -14,7 +14,7 @@ function Content({ info }) {
           <Tags tags={info?.tags} />
         </div>
         <div className="col col-md-2  host ">
-          <div className="col-md-12 d-flex m-0">
+          <div className="d-flex m-0">
             <div className="hostName col-md-6">
               <p>{firstname}</p>
               <p>{lastname}</p>
@@ -31,15 +31,15 @@ function Content({ info }) {
           <Stars rating={info?.rating} />
         </div>
       </div>
-      <div className="container collapse-advertise d-flex row">
-        <div className="col-md-6">
+      <div className="collapse-advertise">
+        <div className="col-sm-12 col-lg-6">
           <AccordionCollapse
             title="Description"
             textArray={[info.description]}
           />
         </div>
 
-        <div className="col-md-6">
+        <div className="col-sm-12 col-lg-6">
           <AccordionCollapse title="Équipements" textArray={info.equipments} />
         </div>
       </div>

@@ -61,6 +61,10 @@
         .image{
             text-align: right;  
             padding: 0;
+            @media (max-width: 768px){
+                width: 30%;
+            }
+           
             .hostThumbnail{
                 width: 64px;
                 height: 64px;  
@@ -75,10 +79,22 @@
     
 }
 .collapse-advertise {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
     padding: 0;
-    margin: 0;
-    div{
+    @media (max-width: 768px){
         padding: 0;
+        margin: 0;
+       display: block;
+        div{
+            padding: 0;
+            display: block;
+        }
     }
+    div{
+        padding: 2px;
+    }
+    
 }
 
