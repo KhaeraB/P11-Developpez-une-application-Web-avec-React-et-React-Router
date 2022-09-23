@@ -1,21 +1,20 @@
-import { Container } from "react-bootstrap";
 import "./style.scss";
 import Tags from "../Tags";
 import Stars from "../Stars";
-import Details from "../Details";
+import AccordionCollapse from "../AccordionCollapse";
 
 function Content({ info }) {
   const [firstname, lastname] = info.host.name.split(" ");
   return (
-    <Container>
-      <Container className="details">
+    <div className="container">
+      <div className="container details">
         <div className="col col-md-10">
           <h1>{info.title}</h1>
           <h3>{info.location}</h3>
           <Tags tags={info?.tags} />
         </div>
         <div className="col col-md-2  host ">
-            <div className="col-md-12 d-flex m-0">
+          <div className="col-md-12 d-flex m-0">
             <div className="hostName col-md-6">
               <p>{firstname}</p>
               <p>{lastname}</p>
@@ -31,9 +30,20 @@ function Content({ info }) {
           </div>
           <Stars rating={info?.rating} />
         </div>
-      </Container>
-      <Details more={info} />
-    </Container>
+      </div>
+      <div className="container collapse-advertise d-flex row">
+        <div className="col-md-6">
+          <AccordionCollapse
+            title="Description"
+            textArray={[info.description]}
+          />
+        </div>
+
+        <div className="col-md-6">
+          <AccordionCollapse title="Équipements" textArray={info.equipments} />
+        </div>
+      </div>
+    </div>
   );
 }
 

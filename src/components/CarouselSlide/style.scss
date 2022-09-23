@@ -1,38 +1,75 @@
-.carousel{
-    .carousel-indicators {
-        display: none!important;
-    }
-    .carousel-control-next-icon, .carousel-control-prev-icon {
-        height: 100px;
-        width: 100px;
-    }
-    .carousel-control-next, .carousel-control-prev {
-        width: 10%!important;
-        opacity: 1;
-    }
-    .carousel-inner{
-        border-radius: 25px;
-        .carousel-indicators{
-            display: none!important;
-        }
-        .carousel-caption{
-            p{
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 26px;
-                letter-spacing: 0em;
-                text-align: center;
-                margin: 0;
-            }
-        }
-        
-        .carousel-item{
-            border-radius: 5px;
-            img{
-                width: 100%;
-                height: 415px;
-                object-fit: cover;
-            }
-        }
-    }   
+.carousel {
+  height: 415px;
+  position: relative;
+  @media only screen and (max-width: 768px) {
+    height: 255px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(255, 255, 255, 0) 10%,
+      rgba(255, 255, 255, 0) 90%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+    border-radius: 25px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+  }
+  img {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* fleches de la lighbox */
+  .arrow-left,
+  .arrow-right {
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 40%;
+    z-index: 110;
+    @media only screen and (max-width: 768px) {
+        top: 45%;
+      }
+  }
+  .arrow-left {
+    left: 1%;
+    background: url("../../assets/arrow-left.svg") transparent;
+    height: 79.19999694824219px;
+    width: 46.68000411987305px;
+    @media only screen and (max-width: 768px) {
+        left: 2%;
+        background: url('../../assets/arrow-left.svg') transparent 50%;
+        height: 45.199996948199995px;
+        width: 48.6800041199px;
+      }
+  }
+  .arrow-right {
+    right: 2%;
+    background: url("../../assets/arrow-right.svg") transparent;
+    height: 79.19999694824219px;
+    width: 46.68000411987305px;
+    @media only screen and (max-width: 768px) {
+        right: 1%;
+        background: url('../../assets/arrow-right.svg') transparent 50%;
+        height: 45.199996948199995px;
+        width: 48.6800041199px;
+      }
+  }
+  .indexImage {
+    bottom: 5%;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    left: 48%;
+    line-height: 26px;
+    position: absolute;
+  }
 }

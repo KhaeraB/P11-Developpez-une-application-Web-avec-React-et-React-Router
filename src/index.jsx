@@ -22,6 +22,7 @@ root.render(
         <Route path="/a-propos" element={<About />} />
         <Route path="/annonce/:id" element={<SingleProduct/>}/>
         <Route path="/*" element={<Error />} />
+
       </Routes>
       <Footer />
     </Router>

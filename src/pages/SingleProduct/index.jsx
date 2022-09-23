@@ -1,11 +1,9 @@
 import CarouselSlide from "../../components/CarouselSlide";
-import { Container } from "react-bootstrap";
 import { useParams, Navigate } from "react-router";
 
 import Error from "../Error";
 import Content from '../../components/Content'
 import Data from '../../data/logements.json'
-import "./style.scss";
 
 
 function SingleProduct() {
@@ -15,10 +13,10 @@ function SingleProduct() {
    <Navigate path="/*" element={<Error />} />
  }
  return (
-    <Container className="mainhero-pageProduct">
+    <div className="container mainhero-pageProduct">
          <CarouselSlide images={advertise?.pictures} />
          <Content info={advertise}/>
-    </Container>
+    </div>
  )
 }
 

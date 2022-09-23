@@ -1,18 +1,22 @@
 import "./style.scss";
-import { Container} from "react-bootstrap";
-import AccordionText from "../../components/AccordionText";
+import { ABOUT_CONTENTS } from "../../constants/about";
+import AccordionCollapse from "../../components/AccordionCollapse";
 
 function About() {
   return (
-    <Container>
+    <div className="container">
       <div>
         <div className="main-hero-about">
           <div className="about">
           </div>
         </div>
       </div>
-      <AccordionText></AccordionText>
-    </Container>
+      <div className="container-collapse">
+        {ABOUT_CONTENTS.map(({ title, text }) => (
+          <AccordionCollapse key={`about-${title}`} title={title} textArray={[text]} />
+        ))}
+      </div>
+    </div>
   );
 }
 

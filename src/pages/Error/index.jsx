@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import "./style.scss";
-import { Container } from "react-bootstrap";
 
 function Error() {
   return (
-    <Container className="d-flex page-not-found">
+    <div className="container d-flex page-not-found">
       <div className="error-page">
         <h1 className="title-error">404</h1>
         <h2 className="error-path">
@@ -14,7 +13,7 @@ function Error() {
       <Link className="back-home" to={`/`}>
         <p>Retourner sur la page d’accueil</p>
       </Link>
-    </Container>
+    </div>
   );
 }
 

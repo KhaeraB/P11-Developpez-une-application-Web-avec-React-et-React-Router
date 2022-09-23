@@ -1,7 +1,7 @@
 .details{
     display: flex;
     flex-direction: row;
-    margin: 3% 0;
+    margin: 6% 0;
     padding: 0;
     align-items: center;
     justify-content: space-between; 
@@ -72,29 +72,13 @@
         }
        
     }
-   
+    
 }
-
-.accordeon-ad{
-    margin: 0;
+.collapse-advertise {
     padding: 0;
-    justify-content: space-between;
-    .accordion{
-        width: 582px;
+    margin: 0;
+    div{
         padding: 0;
-        .accordion-item {
-            margin-bottom: 4%;
-            .accordion-body{
-                height: 100%;
-                font-size: 18px;
-            }
-        }
-        ul{
-            padding: 0;
-            .item{
-                list-style-type: none;
-            }
-        }
-        
     }
 }
+
