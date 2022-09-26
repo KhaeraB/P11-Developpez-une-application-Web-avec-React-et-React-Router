@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom'
 import './style.scss'
-
-
 //import Data from '../../data/logements.json'
 
 function Card(props){

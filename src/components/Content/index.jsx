@@ -4,6 +4,7 @@ import Stars from "../Stars";
 import AccordionCollapse from "../AccordionCollapse";
 
 function Content({ info }) {
+  // séparattion du prénom et nom
   const [firstname, lastname] = info.host.name.split(" ");
   return (
     <div className="container">
