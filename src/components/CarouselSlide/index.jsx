@@ -5,7 +5,6 @@ function CarouselSlide({ images })
 {
     const [currentImage, setCurrent] = useState(0)
     const allImages = images.length
-    console.log(images.length)
     const prev = () => {
         setCurrent(currentImage === 0 ? allImages - 1 : currentImage - 1)
     }
