@@ -1,17 +1,18 @@
 import CarouselSlide from "../../components/CarouselSlide";
-import { useParams, Navigate } from "react-router";
+import { useParams} from "react-router";
 
-import Error from "../Error";
 import Content from '../../components/Content'
 import Data from '../../data/logements.json'
-
+import Error from "../Error";
 
 function SingleProduct() {
  const { id } = useParams()
  const advertise = Data.find((item) => item.id === id)
- if(!advertise){
-   <Navigate path="/*" element={<Error />} />
- }
+if(!advertise){
+  return(
+      <Error/>
+  )
+}
  return (
     <div className="container mainhero-pageProduct">
          <CarouselSlide images={advertise?.pictures} />

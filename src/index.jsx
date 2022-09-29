@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.scss";
 
 import Home from "./pages/Home";
-import Error from "./pages/Error"; 
+import Error from "./pages/Error";
 import About from "./pages/About";
 import SingleProduct from "./pages/SingleProduct";
 import Header from "./components/Header";
@@ -18,11 +18,12 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/accueil" element={<Home />} />
         <Route path="/a-propos" element={<About />} />
         <Route path="/annonce/:id" element={<SingleProduct/>}/>
+        <Route path="/annonce/*" element={<Error/>}/>
         <Route path="/*" element={<Error />} />
-
       </Routes>
       <Footer />
     </Router>

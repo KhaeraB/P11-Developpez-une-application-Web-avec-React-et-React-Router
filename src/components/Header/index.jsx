@@ -1,9 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 import Logo from "../../assets/logo.svg";
 import "./style.scss";
 
 
 function Header() {
+  const navStyle = ({ isActive }) => {
+  
+    return {
+      textDecoration: !isActive && "none",
+      // borderBottom: isActive && "3px solid  #FF6060",
+    };
+  };
   return (
     <header className="container">
       <nav className="row justify-content-between align-items-center">
@@ -13,13 +20,19 @@ function Header() {
           </Link>
         </div>
         <div className="col col-md-6 d-flex justify-content-end">
-          <Link className="nav-link" to="/">
+          
+          <NavLink className={(navInfo) =>
+              navInfo.isActive ? "nav-link active" : "nav-link"
+              } 
+              style={navStyle} to="/accueil">
             Accueil
-          </Link>
+          </NavLink>
 
-          <Link className="nav-link" to="/a-propos">
+          <NavLink className={(navInfo) =>
+                navInfo.isActive ? "nav-link active" : "nav-link"
+              }  to="/a-propos">
             À Propos
-          </Link>
+          </NavLink>
         </div>
       </nav>
     </header>

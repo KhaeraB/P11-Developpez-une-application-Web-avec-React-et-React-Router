@@ -28,17 +28,20 @@ header
         line-height: 34px;
         letter-spacing: 0em;
         text-align: center;
-    
-        &:hover
-        {
-            text-decoration: underline;
-            text-underline-offset: 1rem;
-        }
+        text-decoration: none;
+       
     
         @media (max-width: 768px)
         {
             font-size: 18px;
             padding: 0px 8px;
+            text-transform: uppercase;
         }
     }
+
+    .active{
+        text-decoration: underline;
+            text-underline-offset: 1rem;
+    }
+    
 }
